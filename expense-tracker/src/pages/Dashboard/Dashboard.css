@@ -1,0 +1,354 @@
+/* ****************dashboard********************** */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f7f9fc;
+  color: #18212f;
+}
+
+.dashboard-container {
+  padding: 24px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.dashboard-header h1 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.dashboard-overview {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+/* ****************dashboard end********************** */
+
+/*********** dashboard overview *************************/
+.overview-card {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  margin-right: 16px;
+}
+
+.overview-card-icon img {
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
+  margin-top: -10px;
+  background-color: #0493ff;
+  border-radius: 50%;
+  color: #fff;
+  padding: 8px;
+}
+
+.overview-card-content h3 {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.overview-card-content p {
+  font-size: 21px;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.overview-card-total-spent {
+  background-color: #f2fbf2;
+}
+
+.overview-card-total-spent img {
+  background-color: #a0fe7b;
+}
+
+.overview-card-total-spent h3 {
+  color: #a0fe7b;
+  font-weight: 700;
+}
+
+.overview-card-total-spent p {
+  color: #000000;
+  font-weight: 700;
+}
+
+.overview-card-number-of-expenses {
+  background-color: #f4fbfd;
+}
+
+.overview-card-number-of-expenses img {
+  background-color: #90a2ff;
+}
+
+.overview-card-number-of-expenses h3 {
+  color: #90a2ff;
+  font-weight: 700;
+}
+
+.overview-card-number-of-expenses p {
+  color: #000000;
+  font-weight: 700;
+}
+
+.overview-card-average-expense {
+  background-color: #fbf5ff;
+}
+
+.overview-card-average-expense img {
+  background-color: #e390ff;
+}
+
+.overview-card-average-expense h3 {
+  color: #e1b2ff;
+  font-weight: 700;
+}
+
+.overview-card-average-expense p {
+  color: #000000;
+  font-weight: 700;
+}
+/*********** dashboard overview end *************************/
+
+/* ****************dashboard-content********************** */
+
+.dashboard-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.spending-by-category-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.spending-by-category {
+  display: flex;
+  /* flex: 1; */
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+  border: 1px solid #e0e0e0;
+  margin-right: 16px;
+}
+
+.spending-chart-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.spending-chart-header img,
+.spending-chart-header h2,
+.spending-chart-header span {
+  margin: 0;
+}
+
+.spending-chart-header img {
+  width: 290px;
+  display: block;
+}
+
+.spending-chart-header h2 {
+  position: absolute;
+  font-size: 18px;
+}
+
+
+.spending-chart-header h2,
+.spending-chart-header span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.spending-chart-header span {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+  bottom: 50%;
+}
+
+.spending-chart-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+.chart-spending-info {
+  display: grid;
+  grid-template-columns: 35px 2fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-spending-info .spending-item {
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.chart-spending-info .spending-percentage {
+  border-radius: 20px;
+  font-size: 11px;
+}
+
+.chart-spending-amount {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.active-color-content {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: #0493ff;
+}
+
+/* ****************dashboard-content end********************** */
+
+.recent-expenses {
+  padding: 0 20px;
+  flex: 1;
+}
+
+.recent-expenses-header h2 {
+    font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.recent-expenses-list {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+  border: 1px solid #e0e0e0;
+  padding: 0 0 20px;
+}
+
+.recent-expense-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.recent-expense-item-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recent-expense-list-icon img {
+  width: 40px;
+
+}
+
+.recent-expense-item-info .recent-expense-list-content h4 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.recent-expense-list-content {
+  margin-left: 20px;
+}
+
+.recent-expense-list-content p {
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.recent-expense-item-date .expense-recent-money {
+  font-weight: bold;
+}
+
+.recent-expense-item-date {
+  margin-top: -10px;
+}
+.recent-expense-item-date p {
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+.expense-recent-date {
+  color: gray;
+}
+
+
+@media (max-width: 1163px) {
+    .dashboard-content {
+        flex-direction: column;
+    }
+
+    .spending-by-category {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 975px) {
+  .dashboard-overview {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .overview-card {
+    margin-right: 0;
+  }
+}
+
+@media  (max-width: 829px) {
+  .dashboard-container, .expenses, .add-expenses, .settings {
+    margin-left: 0;
+  }
+
+  .dashboard-container {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+@media  (max-width: 595px) {
+ .spending-chart-header img {
+  width: 200px;
+ }
+
+  .spending-chart-header h2 {
+  font-size: 10px;
+ }
+
+   .spending-chart-header span {
+  font-size: 10px;
+ }
+}
+
+@media  (max-width: 525px) {
+ .dashboard-overview {
+  grid-template-columns: 1fr;
+ }
+}
+
+@media  (max-width: 480px) {
+  .spending-by-category {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,204 @@
+
+.edit-expense-page {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1000;
+}
+
+.edit-expense-main {
+  width: calc(100% - 230px);
+  max-width: 700px;
+  margin-left: 230px;
+  padding: 40px;
+  height: 100vh;
+  height: 100dvh;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+
+.edit-expense-header {
+  margin-bottom: 30px;
+}
+
+.edit-expense-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #18212f;
+}
+
+.edit-expense-header p {
+  margin-top: 8px;
+  color: #7b8797;
+  font-size: 14px;
+}
+
+
+/* FORM CARD */
+
+.edit-expense-card {
+  max-width: 850px;
+  background: #ffffff;
+  border: 1px solid #e4e9ef;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+
+/* FORM GROUP */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #263142;
+}
+
+.form-group label span {
+  font-weight: 400;
+  color: #9aa4b2;
+}
+
+
+/* INPUTS */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #dfe5eb;
+  border-radius: 7px;
+  outline: none;
+  font-size: 13px;
+  color: #263142;
+  background: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #7c8cff;
+}
+
+.form-group textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+
+/* TWO COLUMNS */
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+
+/* AMOUNT */
+
+.amount-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dfe5eb;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.amount-input span {
+  padding-left: 14px;
+  color: #7b8797;
+  font-size: 14px;
+}
+
+.amount-input input {
+  border: none;
+  border-radius: 0;
+}
+
+.amount-input input:focus {
+  border: none;
+}
+
+
+/* BUTTONS */
+
+.edit-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.edit-cancel-btn,
+.save-changes-btn {
+  padding: 11px 20px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-cancel-btn {
+  background: #ffffff;
+  border: 1px solid #dfe5eb;
+  color: #596575;
+}
+
+.save-changes-btn {
+  background: #4f46e5;
+  border: 1px solid #4f46e5;
+  color: #ffffff;
+}
+
+.edit-cancel-btn:hover {
+  background: #f5f7fa;
+}
+
+.save-changes-btn:hover {
+  opacity: 0.9;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .edit-expense-main {
+    width: 100%;
+    margin-left: 0;
+    padding: 25px 18px;
+  }
+
+  .edit-expense-card {
+    padding: 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .edit-form-actions {
+    flex-direction: column;
+  }
+
+  .edit-cancel-btn,
+  .save-changes-btn {
+    width: 100%;
+  }
+}

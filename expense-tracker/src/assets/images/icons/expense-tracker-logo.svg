@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Clipboard Outline -->
+  <rect x="112" y="80" width="288" height="352" rx="32" fill="none" stroke="currentColor" stroke-width="28" />
+  <!-- List Lines -->
+  <path fill="none" stroke="currentColor" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" d="M 176 176 h 160 M 176 256 h 160 M 176 336 h 100" />
+  <!-- Bullet Dots -->
+  <circle cx="136" cy="176" r="10" fill="currentColor" />
+  <circle cx="136" cy="256" r="10" fill="currentColor" />
+  <circle cx="136" cy="336" r="10" fill="currentColor" />
+</svg>

@@ -1,0 +1,257 @@
+
+
+.add-expense-page {
+  min-height: 100vh;
+  background: #f7f9fc;
+  color: #18212f;
+}
+
+.add-expense-main {
+  margin-left: 230px;
+  min-height: 100vh;
+  padding: 35px 45px;
+
+}
+
+.add-expense-header {
+  margin-bottom: 28px;
+}
+
+.add-expense-header h1 {
+  margin: 0 0 7px;
+  font-size: 30px;
+}
+
+.add-expense-header p {
+  margin: 0;
+  color: #7b8797;
+  font-size: 13px;
+}
+
+.success-popup {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-width: 280px;
+  padding: 15px 18px;
+
+  background: white;
+  border: 1px solid #dfe5eb;
+  border-radius: 9px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  z-index: 1000;
+}
+
+.success-popup > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+
+  background: #18a957;
+  color: white;
+  font-weight: bold;
+}
+
+.success-popup strong {
+  display: block;
+  font-size: 13px;
+  color: #18212f;
+}
+
+.success-popup p {
+  margin: 3px 0 0;
+  font-size: 11px;
+  color: #7b8797;
+}
+
+
+/* FORM CARD */
+
+.expense-form-card {
+  background: white;
+  border: 1px solid #e4e8ee;
+  border-radius: 10px;
+  width: 100%;
+  padding: 30px;
+}
+
+
+/* FORM */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #344054;
+}
+
+.form-group label span {
+  color: #98a2b3;
+  font-weight: 400;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dfe4ea;
+  border-radius: 7px;
+  padding: 12px 13px;
+  font-family: inherit;
+  font-size: 13px;
+  color: #18212f;
+  outline: none;
+  background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #1f5790;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+
+/* TWO COLUMNS */
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+
+/* AMOUNT */
+
+.amount-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dfe4ea;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.amount-input span {
+  padding-left: 13px;
+  color: #7b8797;
+  font-size: 13px;
+}
+
+.amount-input input {
+  border: none;
+  outline: none;
+}
+
+
+/* BUTTONS */
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+  padding-top: 22px;
+  border-top: 1px solid #edf0f4;
+}
+
+.cancel-btn,
+.save-expense-btn {
+  padding: 11px 18px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  border: 1px solid #dfe4ea;
+  background: white;
+  color: #596579;
+}
+
+.save-expense-btn {
+  border: none;
+  background: #18a957;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #f7f9fc;
+}
+
+.save-expense-btn:hover {
+  background: #15964c;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 829px) {
+    .add-expense-main {
+    margin-left: 0;
+    margin-top: 50px;
+    padding: 25px 18px;
+  }
+
+  .success-popup {
+    top: 70px;
+  }
+
+  .expense-form-card {
+    margin-bottom: 50px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .add-expense-main {
+    margin-left: 0;
+    margin-top: 50px;
+    padding: 25px 18px;
+  }
+
+  .expense-form-card {
+    padding: 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .add-expense-header h1 {
+    font-size: 26px;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .cancel-btn,
+  .save-expense-btn {
+    width: 100%;
+  }
+}
